@@ -22,23 +22,6 @@ compile the C program by `gcc`
 gcc -g vul.c -o vul.out -fno-stack-protector -mpreferred-stack-boundary=2
 ``` 
 
-# Task 2. Encryption Mode – ECB vs. CBC
-This lab compares the behaviour of ECB and CBC encryption modes
-**Question 1**: Exploration of various ECB & CBC  with openssl
-**Answer 1**:
-## 1. Download the bitmap file `origin.bmp`.
-
-
-## 2. Split the file into header and body:
-
-```sh
-dd if=origin.bmp of=header.bin bs=1 count=54
-dd if=origin.bmp of=body.bin bs=1 skip=54
-```
-
-<img width="500" alt="Screenshot" src="https://github.com/AlexanderSlokov/Security-Labs-Submission/blob/main/asset/encryptingLargeMessage7.png?raw=true"><br>
-
-
 
 # Task 2: Attack on the database of bWapp 
 - Install bWapp (refer to quang-ute/Security-labs/Web-security).
@@ -98,8 +81,11 @@ Table: users
 **Answer 3**:
 
 *1. Access the link `https://www.openwall.com/john/`*
+
 *2. Download this **Openwall***
+
 3. 
+
 ![image](https://github.com/user-attachments/assets/558b15a3-72cc-4ec3-9051-d48f99a1009a)
 
 *4. Create a file `hashes.txt` in the folder name `run`*
